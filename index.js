@@ -20,6 +20,7 @@ function hyperid (opts) {
   var count = 0;
 
   generate.uuid = uuid.v4();
+
   var id = baseId(generate.uuid, urlSafe);
 
   function generate () {
@@ -89,3 +90,6 @@ function decode (id, opts) {
 
 module.exports = hyperid;
 module.exports.decode = decode;
+module.exports.create = function(opts){
+  return new hyperid(opts);
+};

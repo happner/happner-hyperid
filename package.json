@@ -1,6 +1,6 @@
 {
   "name": "happner-hyperid",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "test": "tape test/func.js test/uniqueness.js | tap-spec"
   },
